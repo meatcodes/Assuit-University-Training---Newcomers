@@ -16,8 +16,6 @@ int main()
                n=n/2;
           }
 
-          
-          
           long long ss=0;
           
           for(int i=0; i<count; i++)
@@ -27,4 +25,6 @@ int main()
           
           cout<<ss<<"\n";
      }
+
+     return 0;
 }
