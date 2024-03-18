@@ -64,3 +64,32 @@ int main()
 
     return 0;
 }
+
+//Another approach.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+
+    long long sum=0;
+    int arr[n];
+    for(int i=0; i<n; i++) 
+    {
+         cin>>arr[i];
+         sum=sum+arr[i];
+    }
+
+    int brr[n];
+    for(int i=0; i<n; i++) 
+    {
+         cin>>brr[i];
+         sum=sum-brr[i];
+    }
+
+    if(sum==0) cout<<"yes\n";
+    else cout<<"no\n";
+
+    return 0;
+}
