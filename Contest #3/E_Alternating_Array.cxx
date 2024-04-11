@@ -46,3 +46,35 @@ int main()
 
     return 0;
 }
+
+//Just another way of implementation
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x;
+    cin >> x;
+
+    int a[x];
+
+    int c = 0, p = 0;
+    for (int i = 0; i <x; i++)
+    {
+        int n;
+        cin >> n;
+        if (i % 2 == 1)
+        {
+            if (n < 0) c++;
+            else p++;
+        }
+        else
+        {
+            if (n > 0) c++;
+            else p++;
+        }
+    }
+
+    cout << min(c, p);
+
+    return 0;
+}
